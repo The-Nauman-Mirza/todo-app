@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To - Do List <i class="fa-solid fa-clipboard-list"></i></h2>
+            <div class="list">
+                <input type="text" id="input-box" placeholder="Add your Text">
+                <button onclick="addTask()" id="myButton">Add</button>
+            </div>
+            <ul id="list-container">
+                   
+            </ul>
+            <div class="delete-btn">
+                <button id="delBtn">Delete All</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

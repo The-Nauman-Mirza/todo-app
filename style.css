@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:#CADCFC;
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #00246B;
+    margin: 100px auto 20px;
+    padding: 40px 30px 40px;
+    border-radius: 1rem;
+}
+
+.todo-app h2{
+    display: flex;
+    color: #CADCFC;
+    margin-bottom: 20px;
+}
+
+.todo-app i{
+    margin-left: 10px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+    border-radius: 2rem;
+    border: 1px solid #CADCFC;
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    color: #CADCFC;
+    background: transparent;
+    padding: 20px;
+    font-size: 15px;
+    
+}
+
+button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 15px;
+    color: #CADCFC;
+    background-color: rgb(232, 95, 21);
+    cursor: pointer;
+    
+}
+
+.delete-btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+ul li{
+    color: #CADCFC;
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+}  
+
+ul li.checked{
+    color: rgb(232, 95, 21);
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    color: #CADCFC;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: rgb(232, 95, 21);
+}
